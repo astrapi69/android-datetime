@@ -2,13 +2,13 @@
 buildscript {
     repositories {
         maven {
+            jcenter()
             url "https://plugins.gradle.org/m2/"
         }
     }
     dependencies {
-
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
-        classpath "org.jetbrains.dokka:dokka-gradle-plugin:0.10.0"
+        classpath("org.jetbrains.dokka:dokka-gradle-plugin:0.10.1")
         classpath "com.github.ben-manes:gradle-versions-plugin:$gradlePluginVersionsVersion"
         classpath "gradle.plugin.com.hierynomus.gradle.plugins:license-gradle-plugin:$licenseGradlePluginVersion"
     }
@@ -40,18 +40,10 @@ tasks.withType(GenerateModuleMetadata) {
     enabled = false
 }
 
-task dokkaJavadoc(type: org.jetbrains.dokka.gradle.DokkaTask) {
-    outputFormat = "html"
-    outputDirectory = javadoc.destinationDir
-    inputs.dir "src/main/java"
-}
-
 task javadocJar(type: Jar) {
     archiveClassifier.set("javadoc")
     from javadoc.destinationDir
 }
-
-javadocJar.dependsOn dokkaJavadoc
 
 task sourcesJar(type: Jar) {
     archiveClassifier.set("sources")
@@ -209,6 +201,7 @@ compileTestKotlin {
 
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+    implementation("com.google.android:android:4.1.1.4")
     testImplementation("io.github.astrapi69:silly-io:$sillyIoVersion")
     testImplementation("io.github.astrapi69:file-worker:$fileWorkerVersion")
     testImplementation("io.github.astrapi69:throw-able:$throwAbleVersion")

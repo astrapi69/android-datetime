@@ -2,24 +2,19 @@
 
 <div style="text-align: center">
 
-[![Build Status](https://travis-ci.com/astrapi69/kotlin-library-template.svg?branch=master)](https://travis-ci.com/astrapi69/kotlin-library-template)
-[![Coverage Status](https://codecov.io/gh/astrapi69/kotlin-library-template/branch/develop/graph/badge.svg)](https://codecov.io/gh/astrapi69/kotlin-library-template)
-[![Open Issues](https://img.shields.io/github/issues/astrapi69/kotlin-library-template.svg?style=flat)](https://github.com/astrapi69/kotlin-library-template/issues)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.astrapi69/kotlin-library-template/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.astrapi69/kotlin-library-template)
-[![Javadocs](http://www.javadoc.io/badge/io.github.astrapi69/kotlin-library-template.svg)](http://www.javadoc.io/doc/io.github.astrapi69/kotlin-library-template)
+[![Build Status](https://travis-ci.com/astrapi69/android-datetime.svg?branch=master)](https://travis-ci.com/astrapi69/android-datetime)
+[![Coverage Status](https://codecov.io/gh/astrapi69/android-datetime/branch/develop/graph/badge.svg)](https://codecov.io/gh/astrapi69/android-datetime)
+[![Open Issues](https://img.shields.io/github/issues/astrapi69/android-datetime.svg?style=flat)](https://github.com/astrapi69/android-datetime/issues)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.astrapi69/android-datetime/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.astrapi69/android-datetime)
+[![Javadocs](http://www.javadoc.io/badge/io.github.astrapi69/android-datetime.svg)](http://www.javadoc.io/doc/io.github.astrapi69/android-datetime)
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](http://opensource.org/licenses/MIT)
 [![Donate](https://img.shields.io/badge/donate-❤-ff2244.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GVBTWLRAZ7HB8)
 
 </div>
 
-Template project for create kotlin library projects.
+Holds helper classes for add DatePicker or DateTimePicker to a EditText component.
 
 If you like this project put a ⭐ and donate
-
-# Template from this project
-
-You can derive your kotlin library project from this you can easily and adapt to your specific project if you follow the
-instruction from this [medium blog](https://asterios-raptis.medium.com/new-github-template-repository-feature-ec09afe261b8)
 
 ## Note
 
@@ -40,38 +35,38 @@ or over ether with:
 0x588Aa02De98B1Ef70afeDC3ec5290130a3E5e273
 
 or over flattr:
-<a href="https://flattr.com/submit/auto?user_id=astrapi69&url=https://github.com/astrapi69/kotlin-library-template" target="_blank">
+<a href="https://flattr.com/submit/auto?user_id=astrapi69&url=https://github.com/astrapi69/android-datetime" target="_blank">
 <img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" />
 </a>
 
 ## License
 
-The source code comes under the liberal MIT License, making kotlin-library-template great for all types of applications.
+The source code comes under the liberal MIT License, making android-datetime great for all types of applications.
 
 ## Maven dependency
 
 Maven dependency is now on sonatype.
-Check out [sonatype repository](https://oss.sonatype.org/index.html#nexus-search;gav~io.github.astrapi69~kotlin-library-template~~~) for latest snapshots and releases.
+Check out [sonatype repository](https://oss.sonatype.org/index.html#nexus-search;gav~io.github.astrapi69~android-datetime~~~) for latest snapshots and releases.
 
 Add the following maven dependency to your project `pom.xml` if you want to import the core
-functionality of kotlin-library-template:
+functionality of android-datetime:
 
 Than you can add the dependency to your dependencies:
 
 	<properties>
 			...
-		<!-- kotlin-library-template version -->
-		<kotlin-library-template.version>1</kotlin-library-template.version>
+		<!-- android-datetime version -->
+		<android-datetime.version>1</android-datetime.version>
 			...
 	</properties>
 			...
 		<dependencies>
 			...
-			<!-- kotlin-library-template DEPENDENCY -->
+			<!-- android-datetime DEPENDENCY -->
 			<dependency>
 				<groupId>io.github.astrapi69</groupId>
-				<artifactId>kotlin-library-template</artifactId>
-				<version>${kotlin-library-template.version}</version>
+				<artifactId>android-datetime</artifactId>
+				<version>${android-datetime.version}</version>
 			</dependency>
 			...
 		</dependencies>
@@ -79,11 +74,11 @@ Than you can add the dependency to your dependencies:
 ## gradle dependency
 
 You can first define the version in the ext section and add than the following gradle dependency to
-your project `build.gradle` if you want to import the core functionality of kotlin-library-template:
+your project `build.gradle` if you want to import the core functionality of android-datetime:
 
 define version in file gradle.properties
 ```
-kotlinLibraryTemplateVersion=1
+androidDatetimeVersion=1
 ```
 
 or in build.gradle ext area
@@ -91,7 +86,7 @@ or in build.gradle ext area
 ```
 ext {
 			...
-    kotlinLibraryTemplateVersion = "1"
+    androidDatetimeVersion = "1"
 			...
 }
 ```
@@ -101,14 +96,14 @@ and than add the dependency to the dependencies area
 ```
 dependencies {
 			...
-    implementation("io.github.astrapi69:kotlin-library-template:kotlinLibraryTemplateVersion")
+    implementation("io.github.astrapi69:android-datetime:$androidDatetimeVersion")
 			...
 }
 ```
 
 ## Semantic Versioning
 
-The versions of kotlin-library-template are maintained with the Semantic Versioning guidelines.
+The versions of android-datetime are maintained with the Semantic Versioning guidelines.
 
 Release version numbers will be incremented in the following format:
 
@@ -118,18 +113,18 @@ For detailed information on versioning you can visit the [wiki page](https://git
 
 ## Want to Help and improve it? ###
 
-The source code for kotlin-library-template are on GitHub. Please feel free to fork and send pull requests!
+The source code for android-datetime are on GitHub. Please feel free to fork and send pull requests!
 
-Create your own fork of [astrapi69/kotlin-library-template/fork](https://github.com/astrapi69/kotlin-library-template/fork)
+Create your own fork of [astrapi69/android-datetime/fork](https://github.com/astrapi69/android-datetime/fork)
 
-To share your changes, [submit a pull request](https://github.com/astrapi69/kotlin-library-template/pull/new/develop).
+To share your changes, [submit a pull request](https://github.com/astrapi69/android-datetime/pull/new/develop).
 
 Don't forget to add new units tests on your changes.
 
 ## Contacting the Developers
 
-Do not hesitate to contact the kotlin-library-template developers with your questions, concerns, comments, bug reports, or feature requests.
-- Feature requests, questions and bug reports can be reported at the [issues page](https://github.com/astrapi69/kotlin-library-template/issues).
+Do not hesitate to contact the android-datetime developers with your questions, concerns, comments, bug reports, or feature requests.
+- Feature requests, questions and bug reports can be reported at the [issues page](https://github.com/astrapi69/android-datetime/issues).
 
 ## Similar projects
 
