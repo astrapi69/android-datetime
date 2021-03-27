@@ -56,7 +56,7 @@ Than you can add the dependency to your dependencies:
 	<properties>
 			...
 		<!-- android-datetime version -->
-		<android-datetime.version>1</android-datetime.version>
+		<android-datetime.version>1.1</android-datetime.version>
 			...
 	</properties>
 			...
@@ -78,7 +78,7 @@ your project `build.gradle` if you want to import the core functionality of andr
 
 define version in file gradle.properties
 ```
-androidDatetimeVersion=1
+androidDatetimeVersion=1.1
 ```
 
 or in build.gradle ext area
@@ -86,7 +86,7 @@ or in build.gradle ext area
 ```
 ext {
 			...
-    androidDatetimeVersion = "1"
+    androidDatetimeVersion = "1.1"
 			...
 }
 ```
